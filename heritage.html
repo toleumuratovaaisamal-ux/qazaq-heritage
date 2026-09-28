@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Qazaq Heritage Team Project -->
+    <title>Heritage Sites | Qazaq Heritage</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Task 5: Bootstrap Navigation Bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <img src="images/hero.jpg" alt="Qazaq Heritage logo" width="30" height="30" class="rounded-circle object-fit-cover">
+                    <span>Qazaq Heritage</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="heritage.html">Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="container-fluid flex-grow-1 my-4 px-3 px-md-4">
+        <div class="row g-4">
+            
+            <!-- Sidebar Navigation -->
+            <aside class="col-12 col-lg-3">
+                <div class="p-3 bg-white rounded shadow-sm sticky-lg-top" style="top: 80px;">
+                    <p class="text-uppercase text-secondary fw-bold small mb-2">HERITAGE</p>
+                    <div class="list-group list-group-flush">
+                        <a href="#historical-sites" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">01</span> Historical Sites
+                        </a>
+                        <a href="#architecture" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">02</span> Architecture
+                        </a>
+                        <a href="#traditions" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">03</span> Traditions
+                        </a>
+                        <a href="#cultural-symbols" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">04</span> Cultural Symbols
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Body -->
+            <main class="col-12 col-lg-9">
+                
+                <!-- Introduction Section -->
+                <section class="p-4 p-md-5 bg-white rounded shadow-sm mb-4">
+                    <p class="text-uppercase text-primary fw-bold mb-1">Heritage Collection</p>
+                    <h1 class="display-5 fw-bold mb-3">Places and traditions of Kazakhstan</h1>
+                    <p class="lead text-muted mb-4">Explore historical sites, traditional architecture, and cultural practices that represent different parts of Kazakhstan's heritage.</p>
+                    <img src="images/Qazaq Heritage_1.jpg" alt="Historic cultural site representing Kazakhstan's heritage" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="max-height: 400px;">
+                </section>
+
+                <!-- Task 3 & Task 8: Heritage Cards Section -->
+                <section id="historical-sites" class="mb-5">
+                    <h2 class="h3 fw-bold mb-4">Heritage Collection</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                        
+                        <div class="col">
+                            <article class="card h-100 shadow-sm border-0">
+                                <img src="images/yasawi.jpg" class="card-img-top object-fit-cover" alt="Mausoleum of Khoja Ahmed Yasawi in Turkistan" style="height: 220px;">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <h3 class="card-title h5 fw-bold text-dark mb-2">Mausoleum of Khoja Ahmed Yasawi</h3>
+                                    <p class="card-text text-secondary flex-grow-1">Located in Turkistan, this mausoleum is an important monument of medieval architecture and cultural heritage.</p>
+                                    <a href="#architecture" class="btn btn-outline-primary rounded-pill mt-3">Explore site &rarr;</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="card h-100 shadow-sm border-0">
+                                <img src="images/tamgaly.jpg" class="card-img-top object-fit-cover" alt="Ancient rock carvings at the Tamgaly Petroglyphs site" style="height: 220px;">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <h3 class="card-title h5 fw-bold text-dark mb-2">Tamgaly Petroglyphs</h3>
+                                    <p class="card-text text-secondary flex-grow-1">The Tamgaly archaeological landscape contains ancient rock carvings that provide evidence of early cultural traditions.</p>
+                                    <a href="#cultural-symbols" class="btn btn-outline-primary rounded-pill mt-3">Explore site &rarr;</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="card h-100 shadow-sm border-0">
+                                <img src="images/yurt.jpg" class="card-img-top object-fit-cover" alt="Traditional Kazakh yurt showing nomadic craftsmanship" style="height: 220px;">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <h3 class="card-title h5 fw-bold text-dark mb-2">Traditional Kazakh Yurt</h3>
+                                    <p class="card-text text-secondary flex-grow-1">The yurt is a traditional portable dwelling associated with the nomadic lifestyle and craftsmanship of the Kazakh people.</p>
+                                    <a href="#traditions" class="btn btn-outline-primary rounded-pill mt-3">Explore traditions &rarr;</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Heritage Table Section -->
+                <section class="p-4 bg-white rounded shadow-sm mb-4">
+                    <h2 class="h3 fw-bold mb-4">Heritage Overview</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover align-middle border">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Heritage Site</th>
+                                    <th scope="col">Region</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Historical Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-semibold">Mausoleum of Khoja Ahmed Yasawi</td>
+                                    <td>Turkistan</td>
+                                    <td>Architecture</td>
+                                    <td>14th–15th century</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Tamgaly Petroglyphs</td>
+                                    <td>Almaty Region</td>
+                                    <td>Archaeological Site</td>
+                                    <td>Bronze Age and later</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Otrar</td>
+                                    <td>Turkistan Region</td>
+                                    <td>Ancient Settlement</td>
+                                    <td>Medieval period</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Sauran</td>
+                                    <td>Turkistan Region</td>
+                                    <td>Fortified City</td>
+                                    <td>Medieval period</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Categories, Architecture, Cultural Symbols Sections -->
+                <div class="row g-4 mb-4">
+                    <div id="traditions" class="col-12 col-md-6">
+                        <div class="p-4 bg-white rounded shadow-sm h-100">
+                            <h2 class="h4 fw-bold mb-3">Heritage Categories</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">Historical Sites</li>
+                                <li class="list-group-item px-0">Traditional Architecture</li>
+                                <li class="list-group-item px-0">Nomadic Culture</li>
+                                <li class="list-group-item px-0">Cultural Symbols</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="architecture" class="col-12 col-md-6">
+                        <div class="p-4 bg-white rounded shadow-sm h-100">
+                            <h2 class="h4 fw-bold mb-3">Architecture</h2>
+                            <p class="text-muted">Historic mausoleums, settlements, and traditional yurts show the variety of Kazakh architecture.</p>
+                        </div>
+                    </div>
+
+                    <div id="cultural-symbols" class="col-12">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h2 class="h4 fw-bold mb-3">Cultural Symbols</h2>
+                            <p class="text-muted mb-0">Ornaments, petroglyphs, and traditional objects preserve important cultural meanings and stories.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Task 10 & Submission Rule: Footer with Member Names -->
+    <footer class="bg-dark text-white py-3 mt-auto border-top border-secondary">
+        <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0 small text-secondary">Qazaq Heritage project</p>
+            <p class="mb-0 small text-light">Created by Toleumuratova Aisamal and Absultanov Nurdaulet</p>
+        </div>
+    </footer>
+
+    <!-- Team Information Widget -->
+    <details class="team-info position-fixed bottom-0 end-0 m-3 z-3">
+        <summary class="btn btn-dark shadow-lg px-3 py-2 rounded-pill">About</summary>
+        <div class="team-info-popup card p-3 shadow-lg border-0 mt-2 position-absolute bottom-100 end-0 bg-white" style="width: 260px;">
+            <h3 class="h6 fw-bold mb-3 text-center">About the Team</h3>
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/aisamal.jpg" alt="Toleumuratova Aisamal" width="50" height="50">
+                    <span class="d-block small fw-semibold">Aisamal</span>
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/nurdaulet.jpg" alt="Absultanov Nurdaulet" width="50" height="50">
+                    <span class="d-block small fw-semibold">Nurdaulet</span>
+                </div>
+            </div>
+        </div>
+    </details>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

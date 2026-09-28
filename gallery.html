@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Qazaq Heritage Team Project -->
+    <title>Gallery | Qazaq Heritage</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Task 5: Bootstrap Navigation Bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <img src="images/hero.jpg" alt="Qazaq Heritage logo" width="30" height="30" class="rounded-circle object-fit-cover">
+                    <span>Qazaq Heritage</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="container-fluid flex-grow-1 my-4 px-3 px-md-4">
+        <div class="row g-4">
+            
+            <!-- Sidebar Navigation -->
+            <aside class="col-12 col-lg-3">
+                <div class="p-3 bg-white rounded shadow-sm sticky-lg-top" style="top: 80px;">
+                    <p class="text-uppercase text-secondary fw-bold small mb-2">GALLERY INDEX</p>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">01</span> Places
+                        </div>
+                        <div class="list-group-item border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">02</span> Architecture
+                        </div>
+                        <div class="list-group-item border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">03</span> Traditions
+                        </div>
+                        <div class="list-group-item border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">04</span> Landscapes
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Body -->
+            <main class="col-12 col-lg-9">
+                
+                <!-- Introduction Section -->
+                <section class="p-4 p-md-5 bg-white rounded shadow-sm mb-4">
+                    <p class="text-uppercase text-primary fw-bold mb-1">Visual Archive</p>
+                    <h1 class="display-5 fw-bold mb-3">Gallery of Qazaq Heritage</h1>
+                    <p class="lead text-muted mb-4">Explore visual examples of Kazakhstan's historical places, traditional architecture, cultural objects, and landscapes.</p>
+                </section>
+
+                <!-- Task 7: Bootstrap Carousel (9 Images) -->
+                <section class="mb-5">
+                    <h2 class="h3 fw-bold mb-3">Featured Slider</h2>
+                    <div id="heritageCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                        
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#heritageCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        </div>
+
+                        <!-- Carousel Inner Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/burabay.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Burabay landscape">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Burabay Landscape</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/yurt.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Kazakh yurt">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Kazakh Yurt</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tamgaly.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Tamgaly petroglyphs">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Tamgaly Petroglyphs</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/yasawi.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Yasawi mausoleum">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Yasawi Mausoleum</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/jetiqazyna.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Cultural heritage">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Cultural Heritage</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/kazakh_culture.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Kazakh traditions">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Kazakh Traditions</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Qazaq Heritage_1.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Heritage visual">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Heritage Visual</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/yurt_2.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Yurt detail">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Yurt Detail</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tamgaly_2.jpg" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Petroglyphs">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                    <h5>Petroglyphs Detail</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heritageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heritageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Responsive Grid Gallery -->
+                <section class="p-4 bg-white rounded shadow-sm mb-4">
+                    <h2 class="h3 fw-bold mb-2">Heritage Gallery Grid</h2>
+                    <p class="text-muted mb-4">A visual collection of places, traditions, and cultural symbols.</p>
+                    
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/burabay.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Burabay landscape">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Burabay landscape</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/yurt.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Kazakh yurt">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Kazakh yurt</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/tamgaly.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Tamgaly petroglyphs">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Tamgaly petroglyphs</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/yasawi.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Yasawi mausoleum">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Yasawi mausoleum</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/jetiqazyna.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Cultural heritage">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Cultural heritage</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/kazakh_culture.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Kazakh traditions">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Kazakh traditions</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/Qazaq Heritage_1.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Heritage visual">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Heritage visual</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/yurt_2.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Yurt detail">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Yurt detail</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="images/tamgaly_2.jpg" class="card-img-top object-fit-cover" style="height: 180px;" alt="Petroglyphs">
+                                <div class="card-footer bg-white text-center border-0 py-2">
+                                    <small class="fw-semibold text-secondary">Petroglyphs detail</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Task 10 & Submission Rule: Footer with Member Names -->
+    <footer class="bg-dark text-white py-3 mt-auto border-top border-secondary">
+        <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0 small text-secondary">Qazaq Heritage project</p>
+            <p class="mb-0 small text-light">Created by Toleumuratova Aisamal and Absultanov Nurdaulet</p>
+        </div>
+    </footer>
+
+    <!-- Team Information Widget -->
+    <details class="team-info position-fixed bottom-0 end-0 m-3 z-3">
+        <summary class="btn btn-dark shadow-lg px-3 py-2 rounded-pill">About</summary>
+        <div class="team-info-popup card p-3 shadow-lg border-0 mt-2 position-absolute bottom-100 end-0 bg-white" style="width: 260px;">
+            <h3 class="h6 fw-bold mb-3 text-center">About the Team</h3>
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/aisamal.jpg" alt="Toleumuratova Aisamal" width="50" height="50">
+                    <span class="d-block small fw-semibold">Aisamal</span>
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/nurdaulet.jpg" alt="Absultanov Nurdaulet" width="50" height="50">
+                    <span class="d-block small fw-semibold">Nurdaulet</span>
+                </div>
+            </div>
+        </div>
+    </details>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

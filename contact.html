@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Qazaq Heritage Team Project -->
+    <title>Contact | Qazaq Heritage</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Task 5: Bootstrap Navigation Bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <img src="images/hero.jpg" alt="Qazaq Heritage logo" width="30" height="30" class="rounded-circle object-fit-cover">
+                    <span>Qazaq Heritage</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="container-fluid flex-grow-1 my-4 px-3 px-md-4">
+        <div class="row g-4">
+            
+            <!-- Sidebar Navigation -->
+            <aside class="col-12 col-lg-3">
+                <div class="p-3 bg-white rounded shadow-sm sticky-lg-top" style="top: 80px;">
+                    <p class="text-uppercase text-secondary fw-bold small mb-2">CONTACT</p>
+                    <div class="list-group list-group-flush">
+                        <a href="#feedback" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">01</span> Feedback
+                        </a>
+                        <a href="#message" class="list-group-item list-group-item-action border-0 px-2 py-2 d-flex align-items-center gap-2">
+                            <span class="badge bg-secondary">02</span> Message
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Body -->
+            <main class="col-12 col-lg-9">
+                
+                <!-- Introduction Section -->
+                <section id="feedback" class="p-4 p-md-5 bg-white rounded shadow-sm mb-4">
+                    <p class="text-uppercase text-primary fw-bold mb-1">Get in Touch</p>
+                    <h1 class="display-5 fw-bold mb-3">Share your thoughts</h1>
+                    <p class="lead text-muted mb-4">Have a question, suggestion, or story about Kazakhstan's cultural heritage? Send us a message using the form below.</p>
+                    <img src="images/burabay.jpg" alt="Kazakhstan heritage landscape used for the contact page introduction" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="max-height: 400px;">
+                </section>
+
+                <!-- Task 9: Responsive Form Design -->
+                <section class="p-4 p-md-5 bg-white rounded shadow-sm mb-4">
+                    <h2 class="h3 fw-bold mb-2">Heritage Feedback Form</h2>
+                    <p class="text-muted mb-4">Tell us what part of Kazakhstan's heritage interests you most.</p>
+
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="category" class="form-label fw-semibold">Heritage category</label>
+                            <select class="form-select form-select-lg" id="category" name="category" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="historical-sites">Historical Sites</option>
+                                <option value="traditional-architecture">Traditional Architecture</option>
+                                <option value="nomadic-culture">Nomadic Culture</option>
+                                <option value="cultural-symbols">Cultural Symbols</option>
+                            </select>
+                        </div>
+
+                        <div id="message" class="mb-4">
+                            <label for="message-input" class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control" id="message-input" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">Send Message</button>
+                    </form>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Task 10 & Submission Rule: Footer with Member Names -->
+    <footer class="bg-dark text-white py-3 mt-auto border-top border-secondary">
+        <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0 small text-secondary">Qazaq Heritage project</p>
+            <p class="mb-0 small text-light">Created by Toleumuratova Aisamal and Absultanov Nurdaulet</p>
+        </div>
+    </footer>
+
+    <!-- Team Information Widget -->
+    <details class="team-info position-fixed bottom-0 end-0 m-3 z-3">
+        <summary class="btn btn-dark shadow-lg px-3 py-2 rounded-pill">About</summary>
+        <div class="team-info-popup card p-3 shadow-lg border-0 mt-2 position-absolute bottom-100 end-0 bg-white" style="width: 260px;">
+            <h3 class="h6 fw-bold mb-3 text-center">About the Team</h3>
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/aisamal.jpg" alt="Toleumuratova Aisamal" width="50" height="50">
+                    <span class="d-block small fw-semibold">Aisamal</span>
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle object-fit-cover mb-1" src="images/nurdaulet.jpg" alt="Absultanov Nurdaulet" width="50" height="50">
+                    <span class="d-block small fw-semibold">Nurdaulet</span>
+                </div>
+            </div>
+        </div>
+    </details>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
