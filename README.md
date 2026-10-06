@@ -8,8 +8,6 @@ A web application developed using HTML5 and CSS3.
 .
 ├── css/
 │   └── style.css      # Custom stylesheet
-├── images/
-│   ├── aisamal.jpg    # Image assets
-│   └── burabay.jpg    # Image assets
+├── images/            # Project media and image assets
 ├── index.html         # Main HTML document
 └── README.md          # Project documentation
